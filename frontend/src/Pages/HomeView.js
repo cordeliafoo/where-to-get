@@ -3,21 +3,18 @@ import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 
 const query = gql`
-{
+  {
     allDishes {
       id
+      title
+      description
     }
-
-}
-
+  }
 `
 
 class HomeView extends React.Component {
-
   render() {
-    // const { data } = this.props
-    // console.log(data)
-
+    console.log(this.props)
     return <div>HomeView</div>
   }
 }

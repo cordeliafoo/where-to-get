@@ -1,9 +1,13 @@
-import React, {Component} from 'react'
+import React from 'react'
+import Route from 'react-router-dom/Route'
 
-class App extends React.Component {
-  render () {
-    return <div>Where to Get</div>
-  }
-}
+import HomeView from './Pages/HomeView.js'
+
+const App = () => (
+  <div>
+    where to get
+    <Route exact path="/homeview" component={HomeView} />
+  </div>
+)
 
 export default App
