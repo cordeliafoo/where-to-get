@@ -1,13 +1,9 @@
-import React from 'react';
-import Route from 'react-router-dom/Route';
-import Switch from 'react-router-dom/Switch';
-import Home from './Home';
-import './App.css';
+import React, {Component} from 'react'
 
-const App = () => (
-  <Switch>
-    <Route exact path="/" component={Home} />
-  </Switch>
-);
+class App extends React.Component {
+  render () {
+    return <div>Where to Get</div>
+  }
+}
 
-export default App;
+export default App
